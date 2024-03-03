@@ -86,7 +86,7 @@
                       </label>
                   </div>
 
-                  <div class="bg-white text-black p-4 rounded-lg w-80">
+                  <div class="bg-white text-black p-8 rounded-lg w-80 space-y-5">
                     <div class="flex justify-between">
                         <p>Registered Users</p>
                         <p>01</p>
@@ -116,33 +116,76 @@
     <!-- main section -->
     <main class="container mx-auto mt-12 px-2">
         <!-- discuss section -->
-        <section class="text-center">
-            <div>
+        <section>
+            <div class="text-center">
                 <h1 class="font-black text-4xl mb-4">Let's Discuss</h1>
                 <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
             </div>
 
-            <div class="mt-10">
+            <div class="mt-10 flex gap-6">
                 <!-- show post -->
-                <div>
-                    <div class="hero bg-base-200">
-                        <div class="hero-content flex-col lg:flex-row">
+                <div class="w-2/3">
+                    <div class="hero bg-base-200 p-4 rounded-3xl">
+                        <div class="hero-content flex-col lg:flex-row gap-4 lg:gap-8">
                             <div class="indicator">
                                 <span class="indicator-item badge badge-secondary"></span> 
                                 <div class="grid w-32 h-32 bg-base-300 place-items-center">content</div>
                               </div>
                           <div>
+                            <div class="flex gap-8">
+                                <p>#<span>music</span></p>
+                                <p>Author : <span>Awlad Hossain</span></p>
+                            </div>
                             <h1 class="text-5xl font-bold">Box Office News!</h1>
                             <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                            <button class="btn btn-primary">Get Started</button>
+                            <hr class="w-full border-dashed border-[#a5a7d1] py-4">
+                            <div class="flex justify-between">
+                                <div class="flex gap-4">
+                                    <img src="./images/icons/9.png" alt="">
+                                    <p>560</p>
+                                    <img src="./images/icons/10.png" alt="">
+                                    <p>1568</p>
+                                    <img src="./images/icons/11.png" alt="">
+                                    <p><span>5</span> min</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <img src="./images/icons/12.png" alt="">
+                                </div>
+                            </div>
+                            
                           </div>
                         </div>
                       </div>
                 </div>
 
                 <!-- marked post -->
-                <div>
-
+                <div class="bg-[#7D7DFC] bg-opacity-10 flex-1 rounded-3xl p-6">
+                    <!-- title -->
+                    <div class="flex justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold">Title</h3>
+                        </div>
+                        <div class="flex gap-4">
+                            <div>
+                                <img src="./images/icons/13.png" alt="">
+                            </div>
+                            <div>
+                                <p>Mark as read (<span>4</span>)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post -->
+                    <div>
+                        <div class="flex bg-white p-4 mt-4 rounded-xl">
+                            <div class="w-3/4">
+                                <p>10 Kids Unaware of Their  Halloween Costume</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="size-6" src="./images/icons/10.png" alt="">
+                                <p>1568</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section> 
