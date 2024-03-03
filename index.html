@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro </title>
+
+    <!-- daisyUI & tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- mulish font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .font-mulish {
+            font-family: "Mulish", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-mulish">
+    <!-- header section -->
+    <header class="lg:mt-6">
+        <!-- nave section -->
+        <div class="navbar bg-base-100 justify-between">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Edit</a></li>
+                        <li><a>Add</a></li>
+                        <li><a>Bookmark</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost font-black text-2xl lg:text-4xl">ReTreo</a>
+            </div>
+            <div class="gap-8">
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 gap-4">
+                        <div class="tooltip" data-tip="Home">
+                            <button class="btn rounded-full size-14 border-[#a5a7d1]"><img src="images/5.png" alt=""></button>
+                          </div>
+                        <div class="tooltip" data-tip="Edit">
+                            <button class="btn rounded-full size-14 border-[#a5a7d1]"><img src="images/6.png" alt=""></button>
+                          </div>
+                        <div class="tooltip" data-tip="Add">
+                            <button class="btn rounded-full size-14 border-[#a5a7d1]"><img src="images/7.png" alt=""></button>
+                          </div>
+                        <div class="tooltip" data-tip="Bookmark">
+                            <button class="btn rounded-full size-14 border-[#a5a7d1]"><img src="images/8.png" alt=""></button>
+                          </div>
+                        
+                    </ul>
+                </div>
+                <div class="lg:navbar-end">
+                    <a class="btn text-white bg-[#797DFC] rounded-full px-8">Sign in</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- main section -->
+    <main>
+        <!-- discuss section -->
+        <section class="text-center mt-8">
+            <div>
+                <h1 class="font-black text-4xl mb-4">Let's Discuss</h1>
+                <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+            </div>
+
+            <div>
+                <div>
+                    
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer footer-center p-10 bg-[#d0d0d4] text-black">
+        <aside>
+            <h1 class="font-black text-4xl">ReTro</h1>
+            <p>Connect, share, and learn with our vibrant community. Join the conversation today</p>
+        </aside>
+        <nav>
+            <div class="grid grid-flow-col gap-6">
+                <a><img src="images/1.png" alt=""></a>
+                <a><img src="images/2.png" alt=""></a>
+                <a><img src="images/3.png" alt=""></a>
+                <a><img src="images/4.png" alt=""></a>
+            </div>
+        </nav>
+        <hr class="w-full border-[#a5a7d1]">
+        <p>Copyright © 2024 - All right reserved</p>
+    </footer>
+
+</body>
+
+</html>
