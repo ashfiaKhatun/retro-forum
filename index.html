@@ -124,38 +124,8 @@
 
             <div class="mt-10 flex flex-col lg:flex-row gap-6">
                 <!-- show post -->
-                <div class="w-full lg:w-2/3">
-                    <div class="hero bg-base-200 p-4 rounded-3xl">
-                        <div class="hero-content flex-col lg:flex-row gap-4 lg:gap-8">
-                            <div class="indicator">
-                                <span class="indicator-item badge badge-secondary"></span> 
-                                <div class="grid w-32 h-32 bg-base-300 place-items-center">content</div>
-                              </div>
-                          <div>
-                            <div class="flex gap-8">
-                                <p>#<span>music</span></p>
-                                <p>Author : <span>Awlad Hossain</span></p>
-                            </div>
-                            <h1 class="text-5xl font-bold">Box Office News!</h1>
-                            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                            <hr class="w-full border-dashed border-[#a5a7d1] py-4">
-                            <div class="flex justify-between">
-                                <div class="flex gap-4">
-                                    <img src="./images/icons/9.png" alt="">
-                                    <p>560</p>
-                                    <img src="./images/icons/10.png" alt="">
-                                    <p>1568</p>
-                                    <img src="./images/icons/11.png" alt="">
-                                    <p><span>5</span> min</p>
-                                </div>
-                                <div class="cursor-pointer">
-                                    <img src="./images/icons/12.png" alt="">
-                                </div>
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
+                <div id="show-post" class="w-full lg:w-2/3">
+                    
                 </div>
 
                 <!-- marked post -->
@@ -170,29 +140,21 @@
                                 <img src="./images/icons/13.png" alt="">
                             </div>
                             <div>
-                                <p>Mark as read (<span>4</span>)</p>
+                                <p>Mark as read (<span id="read-post">0</span>)</p>
                             </div>
                         </div>
                     </div>
                     <!-- post -->
-                    <div>
-                        <div class="flex bg-white p-4 mt-4 rounded-xl">
-                            <div class="w-3/4">
-                                <p>10 Kids Unaware of Their  Halloween Costume</p>
-                            </div>
-                            <div class="flex gap-2 items-center">
-                                <img class="size-6" src="./images/icons/10.png" alt="">
-                                <p>1568</p>
-                            </div>
-                        </div>
+                    <div id="marked-post-container">
+                        
                     </div>
                 </div>
             </div>
         </section> 
 
         <!-- forum section -->
-        <section>
-            <div class="hero bg-[#12132D] rounded-3xl mt-12">
+        <section class="mt-12">
+            <div class="hero bg-[#12132D] rounded-3xl">
                 <div class="hero-content flex-col lg:flex-row-reverse p-8">
                   <img src="./images/joinforum.png" class="max-w-sm rounded-lg shadow-2xl" />
                   <div class="text-white">
@@ -203,12 +165,55 @@
                 </div>
               </div>
         </section>
+
+        <!-- latest post section -->
+        <section class="mt-12">
+            <div class="text-center">
+                <h1 class="font-black text-4xl mb-4">Latest Posts</h1>
+                <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+
+
+            <div class="flex justify-center">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="p-4"><img class="rounded-xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="" /></figure>
+
+                        <div class="card-body">
+                            <div class="flex gap-3">
+                                <img src="./images/icons/14.png" alt="">
+                                <p>29 january</p>
+                            </div>
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions">
+                            <div class="flex gap-4 items-center">
+                                
+                                    <div class="avatar">
+                                        <div class="w-14 rounded-full">
+                                          <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                        </div>
+                                      </div>
+                                
+                                <div>
+                                    <h3 class="text-lg font-bold">Cameron</h3>
+                                    <p>Unknown</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                      
+    
+                </div>
+
+            </div>
+        </section>
         
 
     </main>
 
     <!-- footer section -->
-    <footer class="footer footer-center p-10 mt-12 bg-[#d0d0d4] text-black">
+    <footer class="footer footer-center p-10 mt-12 bg-[#12132D] bg-opacity-5 text-black">
         <aside>
             <h1 class="font-black text-4xl">ReTro</h1>
             <p>Connect, share, and learn with our vibrant community. Join the conversation today</p>
@@ -224,6 +229,8 @@
         <hr class="w-full border-[#a5a7d1]">
         <p>Copyright © 2024 - All right reserved</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
