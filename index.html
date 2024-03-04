@@ -20,6 +20,9 @@
         .font-mulish {
             font-family: "Mulish", sans-serif;
         }
+        .scroll::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 
@@ -81,8 +84,8 @@
                     <h1 class="mb-5 text-4xl lg:text-6xl font-bold">Welcome to the <br><span class="text-[#797DFC]">ReTro</span> Forum</h1>
                     <p class="mb-5">Share your favorite opinion and win and wp forum coffee mug!</p>
                     <label class="input input-bordered rounded-full flex items-center gap-2">
-                        <input type="text" class="grow" placeholder="Search here anything" />
-                        <a class="btn text-white bg-[#797DFC] rounded-full px-8 relative left-4">Search</a>
+                        <input id="searched-post" type="text" class="grow text-black" placeholder="Search here anything" />
+                        <a onclick="searchPost()" class="btn text-white bg-[#797DFC] rounded-full px-8 relative left-4">Search</a>
                       </label>
                   </div>
 
@@ -122,6 +125,10 @@
                 <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
             </div>
 
+            <div id="spinner" class="hidden text-center mt-12">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+
             <div class="mt-10 flex flex-col lg:flex-row gap-6">
                 <!-- show post -->
                 <div id="show-post" class="w-full lg:w-2/3">
@@ -129,7 +136,7 @@
                 </div>
 
                 <!-- marked post -->
-                <div class="bg-[#7D7DFC] bg-opacity-10 flex-1 rounded-3xl p-6">
+                <div class="bg-[#7D7DFC] bg-opacity-10 flex-1 rounded-3xl p-6 h-[400px]">
                     <!-- title -->
                     <div class="flex justify-between">
                         <div>
@@ -145,12 +152,14 @@
                         </div>
                     </div>
                     <!-- post -->
-                    <div id="marked-post-container">
+                    <div id="marked-post-container" class="overflow-scroll p-4 h-80 scroll mt-2">
                         
                     </div>
                 </div>
             </div>
         </section> 
+
+        
 
         <!-- forum section -->
         <section class="mt-12">
@@ -173,37 +182,13 @@
                 <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
             </div>
 
+            <div id="spinner2" class="hidden text-center mt-12">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
 
             <div class="flex justify-center">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure class="p-4"><img class="rounded-xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="" /></figure>
+                <div id="latest-posts" class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
 
-                        <div class="card-body">
-                            <div class="flex gap-3">
-                                <img src="./images/icons/14.png" alt="">
-                                <p>29 january</p>
-                            </div>
-                          <h2 class="card-title">Shoes!</h2>
-                          <p>If a dog chews shoes whose shoes does he choose?</p>
-                          <div class="card-actions">
-                            <div class="flex gap-4 items-center">
-                                
-                                    <div class="avatar">
-                                        <div class="w-14 rounded-full">
-                                          <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                                        </div>
-                                      </div>
-                                
-                                <div>
-                                    <h3 class="text-lg font-bold">Cameron</h3>
-                                    <p>Unknown</p>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>                      
-    
                 </div>
 
             </div>
